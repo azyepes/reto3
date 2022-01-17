@@ -62,14 +62,16 @@ main {
     flex-direction: column;
 }
 
-.bg-pattern-intro-left-mobile {
-    width: min-content;
-}
-
-.bg-pattern-intro-right-mobile {
+.bg-pattern-intro-left {
     width: min-content;
     position: relative;
-    top: 217px;
+    top: -3px;
+}
+
+.bg-pattern-intro-right {
+    width: min-content;
+    position: relative;
+    top: 214px;
     left: calc(100% - 124px);
 }
 
@@ -97,14 +99,14 @@ main {
 }
 
 .section1_button {
-    padding: 10px 30px;
+    padding: 12px 25px;
     background-color: var(--darkviolet);
     border:2px solid var(--verylightgray);
     font-size: 1.1rem;
     font-weight: 700;
     margin-left: calc(50% - 66.225px);
     position: relative;
-    bottom: 110px;
+    bottom: 120px;
     color: var(--verylightgray);
     cursor: pointer;
     letter-spacing: 1px;
@@ -171,11 +173,12 @@ hr {
     width: 100%;
     height: 350px;
     background-color: var(--darkviolet);
-    background-image: url("./images/bg-pattern-how-we-work-mobile.svg");
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
     margin-top: 80px;
+}
+
+.bg-pattern-how-we-work {
+    position: relative;
+    left: calc(100% - 176px);
 }
 
 .section3_h1 {
@@ -183,9 +186,11 @@ hr {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
     font-size: 4.5rem;
-    padding: 70px 20px 50px;
+    padding: 0 20px;
     color: var(--verylightgray);
     line-height: 50px;
+    position: relative;
+    top: -250px;
 }
 
 .section3_button {
@@ -198,6 +203,8 @@ hr {
     letter-spacing: 2px;
     color: var(--verylightgray);
     cursor: pointer;
+    position: relative;
+    top: -215px;
 }
 
 .section3_button:hover {
@@ -208,21 +215,24 @@ hr {
 footer {
     width: 100%;
     height: auto;
-    margin: 120px auto 20px;
+    margin: 100px auto 20px;
     background-color: var(--verylightgray);
 }
 
 .linksection {
     width: 100%;
-    height: 173px;
+    height: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    background-image: url("./images/bg-pattern-footer-mobile.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.bg-pattern-footer {
+    display: inline-block;
+    position: relative;
+    top: 67px;
+    z-index: 0;
 }
 
 .socialmedia_linksection {
@@ -230,12 +240,17 @@ footer {
     justify-content: center;
 }
 
+.logo_linksection {
+    z-index: 1;
+}
+
 .a_icon {
     width: 40px;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .icon:hover {

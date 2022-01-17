@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style_mobile.css">
-  <link rel="stylesheet" media="screen and (min-width: 1024px)" href="./style_desktop.css">
+  <link rel="stylesheet" media="screen and (min-width: 768px)" href="./style_desktop.css">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://i.icomoon.io/public/temp/9a5c81f708/UntitledProject/style-svg.css">
   <script defer src="https://i.icomoon.io/public/temp/9a5c81f708/UntitledProject/svgxuse.js"></script>
@@ -27,10 +27,22 @@
   </header>
 <main>
   <section class="section1">
-    <img class="section1_intro_img" src="./images/image-intro-mobile.jpg" alt="image-intro-mobile">
+    <picture class="section1_picture">
+      <source media="(max-width: 767px)" srcset="/images/image-intro-mobile.jpg">
+      <source media="(min-width: 768px)" srcset="/images/image-intro-desktop.jpg">
+      <img class="section1_intro_img" src="/images/image-intro-mobile.jpg" alt="image-intro">
+    </picture>
     <div class="section1_text">
-      <img class="bg-pattern-intro-left-mobile" src="./images/bg-pattern-intro-left-mobile.svg" alt="bg-pattern-intro-left-mobile">
-      <img class="bg-pattern-intro-right-mobile" src="./images/bg-pattern-intro-right-mobile.svg" alt="bg-pattern-intro-right-mobile">
+      <picture class="section1_text_pic1">
+        <source media="(max-width: 767px)" srcset="/images/bg-pattern-intro-left-mobile.svg">
+        <source media="(min-width: 768px)" srcset="/images/bg-pattern-intro-left-desktop.svg">
+        <img class="bg-pattern-intro-left" src="/images/bg-pattern-intro-left-mobile.svg" alt="bg-pattern-intro-left">
+      </picture>
+      <picture class="section1_text_pic2">
+        <source media="(max-width: 767px)" srcset="/images/bg-pattern-intro-right-mobile.svg">
+        <source media="(min-width: 768px)" srcset="/images/bg-pattern-intro-right-desktop.svg">
+        <img class="bg-pattern-intro-right" src="/images/bg-pattern-intro-right-mobile.svg" alt="bg-pattern-intro-left">
+      </picture>
       <h1 class="section1_h1">Humanizing your insurance.</h1>
       <p class="section1_p">
         Get your life insurance coverage easier and faster. We blend our expertise 
@@ -69,12 +81,22 @@
     </article>
   </section>
   <section class="section3">
+    <picture class="section3_picture">
+      <source media="(max-width: 767px)" srcset="/images/bg-pattern-how-we-work-mobile.svg">
+      <source media="(min-width: 768px)" srcset="/images/bg-pattern-how-we-work-desktop.svg">
+      <img class="bg-pattern-how-we-work" src="/images/bg-pattern-how-we-work-mobile.svg" alt="bg-pattern-how-we-work">
+    </picture>
     <h1 class="section3_h1">Find out more about how we work</h1>
     <button class="section3_button">HOW WE WORK</button>    
   </section>
 </main>
   <footer>
     <div class="linksection">
+      <picture class="linksection_picture">
+        <source media="(max-width: 767px)" srcset="/images/bg-pattern-footer-mobile.svg">
+        <source media="(min-width: 768px)" srcset="/images/bg-pattern-footer-desktop.svg">
+        <img class="bg-pattern-footer" src="/images/bg-pattern-footer-mobile.svg" alt="bg-pattern-footer">
+      </picture>
       <div class="logo_linksection">
         <img src="./images/logo.svg" alt="logo_insure">
       </div>
