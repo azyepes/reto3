@@ -19,6 +19,8 @@ html {
     - Font size: 16px*/
     font-family: 'Karla', sans-serif;
     min-width: 320px;
+    max-width: 768px;
+    margin: 0 auto;
 }
 
 .header {
@@ -68,16 +70,18 @@ main {
     flex-direction: column;
 }
 
-.bg-pattern-intro-left {
+.section1_text_pic1, .bg-pattern-intro-left {
     width: min-content;
+    height: auto;
     position: relative;
     top: -3px;
 }
 
-.bg-pattern-intro-right {
+.section1_text_pic2, .bg-pattern-intro-right {
     width: min-content;
+    height: auto;
     position: relative;
-    top: 214px;
+    top: 109px;
     left: calc(100% - 124px);
 }
 
@@ -147,6 +151,11 @@ main {
     color: var(--darkviolet);
 }
 
+.section2_articles {
+    width: 100%;
+    height: auto;
+}
+
 .section2 article {
     width: 78%;
     height: auto;
@@ -160,6 +169,7 @@ main {
 
 .section2_img {
     width: 60px;
+    height: auto;
     padding-bottom: 30px;
 }
 
