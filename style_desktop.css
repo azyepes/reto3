@@ -60,8 +60,8 @@
 
 .bg-pattern-intro-right {
     width: 180px;
-    top: -541px;
-    left: 588px;
+    top: -650px;
+    left: -55px;
 }
 
 .section1_intro_img {
@@ -122,16 +122,18 @@
 }
 
 .section2_articles {
-    width: 73%;
+    width: 79%;
     height: auto;
-    margin: 0 auto;
+    margin-left: calc(13%);
+    margin-right: calc(8%);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .section2_articles article {
-    width: 150px;
+    width: 196px;
     height: auto;
+    margin: 0;
     justify-content: flex-start;
     align-items: flex-start;
     text-align: left;
@@ -143,9 +145,93 @@
 }
 
 .section2_title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .section2_p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    padding-bottom: 0;
+}
+
+.section3 {
+    width: 79%;
+    height: 104.84px;
+    margin-left: calc(13%);
+    margin-top: 60px;
+}
+
+.bg-pattern-how-we-work {
+    width: 30%;
+    left: calc(100% - 182.02px);
+}
+
+.section3_h1 {
+    width: 260px;
+    font-size: 2.5rem;
+    top: -80px;
+    text-align: left;
+    padding: 0 0 0 40px;
+    line-height: 25px;
+}
+
+.section3_button {
+    font-size: 0.7rem;
+    padding: 6px 10px;
+    margin: 0;
+    top: -120px;
+    left: 490px;
+    letter-spacing: 1px;
+}
+
+.linksection {
+    height: 70px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bg-pattern-footer {
+    width: 65%;
+    height: auto;
+    position: relative;
+    top: 36px;
+    z-index: 0;
+}
+
+.logo_linksection {
+    position: relative;
+    top: 0;
+    right: calc(61% - 112px);
+}
+
+.socialmedia_linksection {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: -50px;
+}
+
+.linksection_hr {
+    width: 79%;
+    margin-left: calc(13%);
+}
+
+.services {
+    width: 79%;
+    margin-left: calc(13%);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.service {
+    margin-right: 80px;
+}
+
+.tittle {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.tittle_list {
+    align-items: flex-start;
+    font-size: 1rem;
 }

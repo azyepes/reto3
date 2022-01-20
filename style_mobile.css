@@ -196,7 +196,14 @@ main {
     margin-top: 80px;
 }
 
+.section3_picture {
+    width: 100%;
+    height: auto;
+}
+
 .bg-pattern-how-we-work {
+    width: min-content;
+    height: auto;
     position: relative;
     left: calc(100% - 176px);
 }
@@ -215,8 +222,8 @@ main {
 
 .section3_button {
     padding: 10px 20px;
-    background-color: var(--darkviolet);
-    border:2px solid var(--verylightgray);
+    background-color: transparent;
+    border:1px solid var(--verylightgray);
     font-size: 1.5rem;
     font-weight: 700;
     margin-left: calc(50% - 91.33px);
@@ -235,7 +242,7 @@ main {
 footer {
     width: 100%;
     height: auto;
-    margin: 100px auto 20px;
+    margin: 100px auto 0;
     background-color: var(--verylightgray);
 }
 
@@ -334,6 +341,7 @@ footer {
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .attribution a {
